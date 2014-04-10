@@ -1,4 +1,5 @@
 *~
 .git
+*.elc
 *.dat
 auto-save-list
