@@ -29,3 +29,29 @@
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/plugins/auto-complete-1.3/ac-dict")
 (ac-config-default)
+
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 2)
+
+(setq js-indent-level 2)
+
+(add-hook 'python-mode-hook '(lambda () 
+                               (setq python-indent 2)))
+(setq-default python-indent 2)
+
+(put 'upcase-region 'disabled nil)
+
+(setq backup-directory-alist (quote(("." . "~/.backups"))))
+
+;(global-hl-line-mode t)
+
+; Load Dired X when Dired is loaded.
+; (add-hook 'dired-load-hook '(lambda () (require 'dired-x)))
+
+;; Enable toggling of uninteresting files.
+(setq dired-omit-mode t)
+
+(require 'dired-x)
+(setq-default dired-omit-files-p t) ; this is buffer-local variable
+(setq dired-omit-files
+      (concat dired-omit-files "^\\.pyc$"))
