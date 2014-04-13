@@ -20,10 +20,6 @@
 (require 'yasnippet)
 (yas-global-mode 1)
 
-;; magit
-(add-to-list 'load-path "~/.emacs.d/plugins/magit-1.2.0")
-(require 'magit)
-
 ;; auto-complete 1.3.1
 (add-to-list 'load-path "~/.emacs.d/plugins/auto-complete-1.3")
 (require 'auto-complete-config)
