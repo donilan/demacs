@@ -1,4 +1,4 @@
-(set-language-environment 'Chinese-GB)
+(set-language-environment 'UTF-8)
 (set-keyboard-coding-system 'utf-8)
 (set-clipboard-coding-system 'utf-8)
 (set-terminal-coding-system 'utf-8)
