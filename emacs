@@ -51,3 +51,11 @@
 (setq-default dired-omit-files-p t) ; this is buffer-local variable
 (setq dired-omit-files
       (concat dired-omit-files "^\\.pyc$"))
+
+;; Inserting todays date
+(defun insert-current-date () (interactive)
+  (insert (shell-command-to-string "echo -n $(date +%Y-%m-%d)")))
+(defun insert-current-time() (interactive)
+  (insert (shell-command-to-string "echo -n $(date +%H:%M:%S)")))
+(defun insert-current-datetime() (interactive)
+  (insert (shell-command-to-string "echo -n $(date +%Y-%m-%d\\ %H:%M:%S)")))
