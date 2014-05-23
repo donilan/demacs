@@ -52,7 +52,7 @@
 (setq dired-omit-files
       (concat dired-omit-files "^\\.pyc$"))
 
-;; Inserting todays date
+; Inserting todays date
 (defun insert-current-date () (interactive)
   (insert (shell-command-to-string "echo -n $(date +%Y-%m-%d)")))
 (defun insert-current-time() (interactive)
